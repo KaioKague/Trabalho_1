@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xopi.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Produto</title>
+</head>
+<body>
+    <header class="topo"><img src="img/logo.png" alt="logo-xhopii"><h1>Xhopii</h1></header>
+
+    <nav class="menu_nav"><a href="home.html">Home</a>
+        <a href="cadasClie.html">Cadastro Cliente</a>
+        <a href="cadasFunc.html">Cadastro Funcionário</a>
+        <a href="cadasProd.html">Cadastro Produto</a>
+        <a href="#">Ver Clientes</a>
+        <a href="#">Ver Funcionários</a>
+        <a href="verProd.html">Ver Produtos</a>
+    </nav>
+    <section class="prod"> 
+        <div id="imges">
+        <img class="prod1" src="img/produto1.png" alt="Camiseta preta" onclick="selecionarImgProduto(this)">
+        <img class="prod1" src="img/produto2.png" alt="Camiseta azul" onclick="selecionarImgProduto(this)">
+        <img class="prod1" src="img/produto3.png" alt="Camiseta verde" onclick="selecionarImgProduto(this)">
+        <img class="prod1" src="img/produto4.png" alt="Camiseta cinza" onclick="selecionarImgProduto(this)">
+        <img class="prod1" src="img/produto5.png" alt="Camiseta rosa" onclick="selecionarImgProduto(this)">
+        </div>
+        <div id="big">
+            <img id="imgPrincipal" src="img/produto1.png">
+        </div>
+        <div class="infor">
+            <h1>Camisa Desenvolvedor Front-End CSS</h1>
+            <p id="precoProduto">R$ 56,90</p>
+            <p id="qtdDisponivel" class="menor">171 peças disponíveis</p>
+            <p class="menor">Modelos: </p>
+
+            <section>
+                <button id="btnModeloPreto" onclick="mudarPreco(this)">Preto</button> 
+                <button id="btnModeloAzul" onclick="mudarPreco(this)">Azul</button> 
+                <button id="btnModeloVerde" onclick="mudarPreco(this)">Verde</button>
+                <button id="btnModeloCinza" onclick="mudarPreco(this)">Cinza</button> 
+                <button id="btnModeloRosa" onclick="mudarPreco(this)">Rosa</button>
+            </section>
+
+            <p class="menor">Tamanhos: </p>
+
+            <section>
+                <button id="btnTamanhoP" onclick="mudarTamanho(this)">P</button> 
+                <button id="btnTamanhoM" onclick="mudarTamanho(this)">M</button>
+                <button id="btnTamanhoG" onclick="mudarTamanho(this)">G</button>
+                <button id="btnTamanhoGG" onclick="mudarTamanho(this)">GG</button>
+            </section>
+
+            <p class="menor" id="tamanhoSelecionado">Tamanho Selecionado: P</p>
+            <button id="comprar">Comprar Agora</button>
+        </div>
+    </section>
+    
+    <footer>
+        <div id="atend">
+            <h1>ATENDIMENTO AO CLIENTE</h1>
+            <p>Central de Ajuda</p>
+            <p>Como Comprar</p>
+            <p>Métodos de Pagamento</p>
+            <p>Grantia Xhopii</p>
+            <p>Devolução e Reembolso</p>
+            <p>Fale Conosco</p>
+            <p>Ouvidoria</p>
+        </div>
+        <div id="sobre">
+            <h1>SOBRE A XHOPII</h1>
+            <p>Sobre Nos</p>
+            <p>Politicas Xhopii</p>
+            <p>Politica de Privacidade</p>
+            <p>Programa de Aliados da Xhopii</p>
+            <p>Ofertas Relâmpago</p>
+            <p>Xhopii Blog</p>
+            <p>Impresa</p>
+        </div>
+        <div id="paga">
+            <h1>PAGAMENTO</h1>
+            <div id="img">
+            <img src="img/pix.png">
+            <img src="img/boleto.png">
+            <img src="img/america.png">
+            <img src="img/VIsa.png">
+            <img src="img/mastercard.png">
+            <img src="img/hipercard.png">
+            <img src="img/elo.png">
+            </div>
+        </div>
+        <div id="siga">
+            <h1>SIGA-NOS</h1>
+            <p><img src="img/instagrampreto.png"> Instagram</p>
+            <p><img src="img/twipreto.png"> Twitter</p>
+            <p><img src="img/facebookpreto.png"> Facebook</p>
+            <p><img src="img/youtubepreto.png"> Youtube</p>
+            <p><img src="img/linkpreto.png"> Linkedin</p>
+        </div>
+        <div id="atend2">
+            <h1>ATENDIMENTO AO CLIENTE</h1>
+            <img id="qrcode" src="img/QRCode_Fácil.png">
+            <img src="img/googleplay.png">
+            <img src="img/appstore.png">
+        </div>
+    </footer>
+</body>
+</html>
